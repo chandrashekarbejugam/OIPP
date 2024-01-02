@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunityFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topHeadCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_ash"
+            android:elevation="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Community"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_marginVertical="@dimen/_15sdp"
+                android:textSize="@dimen/_16sdp"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="@dimen/_25sdp"-->
+<!--                android:layout_height="@dimen/_25sdp"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginEnd="@dimen/_20sdp"-->
+
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:src="@drawable/round_search_24" />-->
+
+
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCommunity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topHeadCommunity"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+        <ImageView
+            android:id="@+id/addPostCommunity"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/plus"
+            android:contentDescription="Add post button for community"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

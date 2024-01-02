@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/topHeadNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_ash"
+        android:elevation="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/backNotification"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/back_24"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/backNotification"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:textSize="@dimen/_16sdp"/>
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topHeadNotification"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+</RelativeLayout>

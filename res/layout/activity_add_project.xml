@@ -1,0 +1,188 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddProjectActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/backBtnAddProject"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back_24" />
+
+        <!-- Project Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Project Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Enter project title" />
+
+        <!-- Project Description -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Project Description"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Enter project description" />
+
+        <!-- Project Tags (Multiple Selection) -->
+        <TextView
+            android:id="@+id/textViewTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Project Tags"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/autoCompleteTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:completionThreshold="1"
+            android:hint="Add tags" />
+
+
+        <TextView
+            android:id="@+id/textViewTeam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Team Members"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Other UI elements go here -->
+
+            <EditText
+                android:id="@+id/editTextTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewBudget"
+                android:layout_marginTop="4dp"
+                android:hint="Enter Team Member Name"
+                 />
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/addMemberButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Team Member" />
+
+
+        <!-- Technologies Used -->
+        <TextView
+            android:id="@+id/textViewTechnologies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Technologies Used"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/editTextTechnologies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:completionThreshold="1"
+            android:hint="Enter Technologies used" />
+
+        <ImageView
+            android:id="@+id/imageViewPreview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <!-- Image Upload Button -->
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Upload Project Image" />
+
+        <!-- Project Duration -->
+        <TextView
+            android:id="@+id/textViewDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Project Duration"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewDuration"
+            android:layout_marginTop="4dp"
+            android:hint="Enter project duration (e.g., 3 months)"
+            android:inputType="number" />
+
+        <!-- Budget for Project -->
+        <TextView
+            android:id="@+id/textViewBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Budget for Project"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="Enter project budget"
+            android:inputType="number" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            android:text="Submit Project" />
+
+
+    </LinearLayout>
+</ScrollView>

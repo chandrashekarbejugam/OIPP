@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MessageActivity">
+
+    <RelativeLayout
+        android:id="@+id/topHeadMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfileChat"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/linked_in"
+
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/userNameChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user name"
+            android:layout_toEndOf="@id/userProfileChat"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_19sdp"
+            android:layout_marginVertical="@dimen/_10sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/more_vert_24"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topHeadMessage"
+        android:layout_above="@id/bottomEditText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/messageEditText" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:id="@+id/editTextChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_message"
+            android:maxLines="5"
+            android:layout_weight="1"
+            android:layout_toStartOf="@id/sendBtmMessageDup"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingVertical="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:hint="Enter your message"/>
+
+
+        <Button
+            android:id="@+id/sendBtmMessageDup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/_9sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_15sdp"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendBtnMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_15sdp"/>
+</RelativeLayout>

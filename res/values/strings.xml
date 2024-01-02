@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">OIPP</string>
+    <string-array name="project_type">
+        <item>Major Project</item>
+        <item>Minor Project</item>
+        <item>Personal Project</item>
+    </string-array>
+
+    <string-array name="available_tags">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>Web Development</item>
+        <item>Machine Learning</item>
+        <!-- Add more tags as needed -->
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_user_details">Save</string>
+    <string name="enter_username_userName">   Enter User name</string>
+    <string name="userimage_userDetails">UserImage</string>
+    <string name="click_image_UserDetails">click on the above image to upload your profile</string>
+</resources>

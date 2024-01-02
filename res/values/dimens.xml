@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dimens.xml -->
+<resources>
+    <dimen name="sender_margin_start">16dp</dimen>
+    <dimen name="receiver_margin_end">16dp</dimen>
+</resources>

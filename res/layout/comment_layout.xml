@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="10dp"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImageComment"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/person_24"/>
+
+        <TextView
+            android:id="@+id/userNameComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toEndOf="@id/userImageComment"
+            android:text="User Name"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dateComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_toStartOf="@id/moreImageComment"/>
+
+        <ImageView
+            android:id="@+id/moreImageComment"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/more_vert_24" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/contentComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:layout_marginEnd="10dp"
+        android:textSize="@dimen/_17sdp"
+        android:layout_marginBottom="10dp"
+        android:text="Comment"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+
+            <ImageView
+                android:id="@+id/imageLikeComment"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/arrow_up_24"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/likeCountComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/imageLikeComment"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="0"/>
+
+            <TextView
+                android:id="@+id/replyTextComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:text="reply"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
